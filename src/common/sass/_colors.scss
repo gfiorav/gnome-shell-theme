@@ -81,7 +81,7 @@ $darkest_bg_color: if($variant == 'light', $grey_300, $brown_800);
 $titlebar_bg_color:          if($titlebar == 'dark', if($variant == 'light', $brown_700, lighten($brown_800, 5%)), $brown_300);
 $inactive_titlebar_bg_color: if($titlebar == 'dark', if($variant == 'light', fade($brown_700), fade(lighten($brown_800, 5%))), fade($brown_300));
 $alt_titlebar_bg_color:      if($titlebar == 'dark', $brown_800, mix($brown_300, $brown_400, 50%));
-$panel_bg_color:             darken($brown_800, 3%);
+$panel_bg_color:             if($titlebar == 'light', $brown_300, darken($brown_800, 3%));
 $unity_panel_bg_color:       if($titlebar == 'dark', $brown_900, mix($grey_300, $grey_400, 50%));
 $alt_panel_bg_color:         rgba($black, $lower_opacity);
 
