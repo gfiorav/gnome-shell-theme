@@ -45,7 +45,7 @@
     &:active, &:overview, &:focus, &:checked {
       background-color: rgba(0, 0, 0, 0.01);
       box-shadow: inset 0 -2px 0px $accent_color;
-      color: white; 
+      color: $inverse_fg_color;
     
       &:active > .system-status-icon, &:overview > .system-status-icon, &:focus > .system-status-icon, &:checked > .system-status-icon {
         icon-shadow: black 0 2px 2px; 
