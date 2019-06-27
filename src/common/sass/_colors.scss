@@ -61,6 +61,7 @@ $titlebar_track_color:                 if($titlebar == 'light', rgba($brown_700,
 $titlebar_divider_color:               if($titlebar == 'light', rgba($brown_700, 0.12), rgba($white, 0.12));
 
 $inverse_fg_color:                    $white;
+$inverse_fg_color:                    if($titlebar == 'light', $black, $white);
 $inverse_bg_color:                    $brown_800;
 $inverse_secondary_fg_color:          if($titlebar == 'light', $brown_700, rgba($white, 0.7));
 $inverse_hint_fg_color:               rgba($white, 0.5);
