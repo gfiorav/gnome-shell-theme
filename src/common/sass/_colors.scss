@@ -62,7 +62,7 @@ $titlebar_divider_color:               if($titlebar == 'light', rgba($brown_700,
 
 $inverse_fg_color:                    $white;
 $inverse_bg_color:                    $brown_800;
-$inverse_secondary_fg_color:          rgba($white, 0.7);
+$inverse_secondary_fg_color:          if($titlebar == 'light', $brown_700, rgba($white, 0.7));
 $inverse_hint_fg_color:               rgba($white, 0.5);
 $inverse_disabled_fg_color:           rgba($white, 0.5);
 $inverse_disabled_secondary_fg_color: rgba($white, 0.3);
